@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF Session</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
+  <!-- Firebase config -->
+  <script src="firebase.js"></script>
+
+  <!-- PDF.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+  <!-- App logic -->
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="chat">
+    <!-- Classic xat chat embed -->
+    <script type="text/javascript" src="https://xat.com/web_gear/chat/gear?id=YOUR_CHAT_ID&t=js"></script>
+  </div>
+
+  <div class="pdf">
+    <canvas id="pdfCanvas"></canvas>
+    <button id="confirm">✔ I read this page</button>
+    <div id="status">Waiting for other reader...</div>
+  </div>
+</div>
+
+</body>
+</html>
